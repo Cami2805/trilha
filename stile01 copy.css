@@ -1,0 +1,85 @@
+body
+{
+ font-family: Arial, Helvetica, sans-serif;
+ background-image: linear-gradient(to right, #0b1726, #1f3f66);
+ width: 90%; /*o corpo de texto ocupa 90%  da area visivel do navegador*/
+ margin: 0 auto; /*divide o conteudo de forma proporcional no navegador*/
+}
+header
+{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ background-color: #161616;
+ margin-top:50px ;
+ border-radius: 5px;
+}
+.principal
+{
+    display: flex;
+    flex-direction: row;/*permite que o conteúdo fique "flexivel" para a manipulação ocupando
+    uma linha disposto em colunas*/
+}
+.conteudo
+{
+    float: left;
+    margin: 15px 2px 25px 2px;
+    background-color: gainsboro;
+    padding: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas de largura igual */
+    gap: 2px; /* Espaço entre os itens */
+}
+.conteudo.lateral {
+    grid-column: span 2; /* O conteúdo ocupa duas colunas */
+    padding: 15px;
+    background-color:gainsboro; 
+    margin: 15px 2px 25px 2px;
+}
+.conteudo.lateral {
+    grid-column: span 2; /* O conteúdo ocupa duas colunas */
+    margin: 15px 2px 25px 2px;
+    background-color: gainsboro; 
+    padding: 15px;
+}
+
+.mainmenubtn {
+    background-color: #161616;
+    color: white;
+    border: none;
+    cursor: pointer;/*O cursor é um ponteiro que indica um link. Normalmente, a imagem de uma mão apontando.*/
+    padding:2px;
+    margin-top:2px;
+    margin-right: 10px; 
+    box-sizing: border-box; /* Inclui a borda e o padding no tamanho total do botão */
+    cursor: pointer;
+}
+.mainmenubtn:hover {
+    color: #e32936;
+    background-color: black;
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    color: #161616;
+    min-width: 100px;
+}
+.dropdown-child a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+
+    display: block;
+}
+.dropdown-child a:hover
+{
+    color: #e32936;
+    background-color: black;
+}
